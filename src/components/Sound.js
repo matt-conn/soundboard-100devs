@@ -1,7 +1,9 @@
-const Sound = ( {task} ) => {
-  return (
-    <button className="button">{task}</button>
-  )
-}
+const Sound = ({ text, onClick }) => {
+	return (
+		<button onClick={onClick} className='button'>
+			{text}
+		</button>
+	);
+};
 
-export default Sound
+export default Sound;

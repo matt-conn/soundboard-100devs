@@ -1,10 +1,10 @@
 import Sound from './Sound';
 
-const Sounds = ({ sounds }) => {
+const Sounds = ({ sounds, onClick }) => {
 	return (
         <div className="board">
             {sounds.map((sound) => (
-                <Sound task={sound.text} />
+                <Sound key={sound.id} text={sound.text} onClick={onClick} />
             ))}
         </div>
     )

@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import useSound from 'use-sound';
+import planeSfx from './sounds/small-plane.mp3'
 import Sounds from './components/Sounds'
 import './App.css';
 
@@ -42,6 +44,15 @@ function App() {
 		}
 	])
 
+	const playSound = () => {
+		console.log('SOUND')
+	}
+
+	const BoopButton = () => {
+		const [play] = useSound(planeSfx);
+	  
+		return <button onClick={play}>Boop!</button>;
+	};
 
 	return (
 		<div className='container'>
@@ -52,7 +63,10 @@ function App() {
 			<main>
 				<Sounds 
 					sounds={sounds}
+					onClick={playSound}
 				/>
+
+				<BoopButton />
 			</main>
 		</div>
 	);
