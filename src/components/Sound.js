@@ -1,6 +1,6 @@
-const Sound = ({ text, onClick }) => {
+const Sound = ({ sound, text, onClick }) => {
 	return (
-		<button onClick={onClick} className='button'>
+		<button onClick={() => onClick(sound.sfx)} className='button'>
 			{text}
 		</button>
 	);

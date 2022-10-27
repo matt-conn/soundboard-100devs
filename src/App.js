@@ -1,58 +1,68 @@
 import { useState } from 'react';
-import useSound from 'use-sound';
 import planeSfx from './sounds/small-plane.mp3'
 import Sounds from './components/Sounds'
 import './App.css';
 
 function App() {
+	const [isPlaying, setIsPlaying] = useState(false);
+
 	const [sounds] = useState([
 		{
 			id: 1,
-			text: 'We go get1'
+			text: 'We go get1',
+			sfx: new Audio(planeSfx),
 		},
 		{
 			id: 2,
-			text: 'We go get2'
+			text: 'We go get2',
+			sfx: './sounds/small-plan.mp3',
 		},
 		{
 			id: 3,
-			text: 'We go get3'
+			text: 'We go get3',
+			sfx: './sounds/small-plan.mp3',
 		},
 		{
 			id: 4,
-			text: 'We go get4'
+			text: 'We go get4',
+			sfx: './sounds/small-plan.mp3',
 		},
 		{
 			id: 5,
-			text: 'We go get5'
+			text: 'We go get5',
+			sfx: './sounds/small-plan.mp3',
 		},
 		{
 			id: 6,
-			text: 'We go get6'
+			text: 'We go get6',
+			sfx: './sounds/small-plan.mp3',
 		},
 		{
 			id: 7,
-			text: 'We go get7'
+			text: 'We go get7',
+			sfx: './sounds/small-plan.mp3',
 		},
 		{
 			id: 8,
-			text: 'We go get8'
+			text: 'We go get8',
+			sfx: './sounds/small-plan.mp3',
 		},
 		{
 			id: 9,
-			text: 'We go get9'
+			text: 'We go get9',
+			sfx: './sounds/small-plan.mp3',
 		}
 	])
 
-	const playSound = () => {
-		console.log('SOUND')
-	}
+	const playSound = (sfx) => {
+		if (!isPlaying) {
+			sfx.play();
+		} else {
+			sfx.pause();
+		}
 
-	const BoopButton = () => {
-		const [play] = useSound(planeSfx);
-	  
-		return <button onClick={play}>Boop!</button>;
-	};
+		setIsPlaying(!isPlaying)
+	}
 
 	return (
 		<div className='container'>
@@ -65,8 +75,6 @@ function App() {
 					sounds={sounds}
 					onClick={playSound}
 				/>
-
-				<BoopButton />
 			</main>
 		</div>
 	);
