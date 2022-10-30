@@ -12,7 +12,7 @@ function App() {
 			text: 'We go get1',
 			sfx: new Audio(planeSfx),
 			isPlaying: false,
-			cover: './images/default-cover.png',
+			cover: 'images/default-cover.png',
 		},
 		{
 			id: 2,

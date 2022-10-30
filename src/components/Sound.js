@@ -1,18 +1,21 @@
 const Sound = ({ sound, text, onClick }) => {
 	return (
-		<button 
-			onClick={() => onClick(sound)}
-			className='button'
-			style={{ 
-				backgroundImage: `url(/default-cover.png)`,
-				backgroundPosition: 'center',
-				backgroundRepeat:'no-repeat',
-				backgroundSize:'contain',
-				color: 'white'
-			}}
-		>
-			{text}
-		</button>
+		<div>
+			<button 
+				onClick={() => onClick(sound)}
+				className='button'
+				style={{ 
+					backgroundImage: `url('${sound.cover}')`,
+					backgroundPosition: 'center',
+					backgroundRepeat:'no-repeat',
+					backgroundSize:'cover',
+					color: 'white'
+				}}
+			>
+			</button>
+
+			<p className='subtitle'>{text}</p>
+		</div>
 	);
 };
 
