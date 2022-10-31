@@ -77,7 +77,7 @@ function App() {
 	return (
 		<div className='container'>
 			<header className='App-header'>
-				<h1>100Devs Soundboard</h1>
+				<h1 className='text-3xl font-bold'>100Devs Soundboard</h1>
 			</header>
 
 			<main>

@@ -3,7 +3,7 @@ const Sound = ({ sound, text, onClick }) => {
 		<div>
 			<button 
 				onClick={() => onClick(sound)}
-				className='button'
+				className='button bg-violet-500 hover:bg-violet-600'
 				style={{ 
 					backgroundImage: `url('${sound.cover}')`,
 					backgroundPosition: 'center',
