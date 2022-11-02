@@ -26,32 +26,12 @@ nav {
 	text-align: center;
 }
 
-.container {
-	background-color: #282c34;
-	min-height: 100vh;
+body {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
 	justify-content: center;
-	font-size: calc(10px + 2vmin);
-	color: white;
-}
-
-.board {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(3, 1fr);
-	grid-gap: 1px;
-	margin: 2rem;
-	padding: 2rem 3rem 2rem 3rem;
-}
-
-.button {
-	font-size: 2rem;
-	width: 18rem;
-	height: 10rem;
-	margin: 1rem;
-	border-radius: 1rem;
+	background-color: #282c34;
+	align-items: center;
+	min-height: 100vh;
 }
 
 .subtitle {
@@ -61,7 +41,7 @@ nav {
 }
 
 @media (min-width: 725px) and (max-width: 999px) {
-	.board {
+	/* .board {
 		grid-template-columns: repeat(3, 1fr);
 		grid-gap: 0.75px;
 	}
@@ -69,11 +49,11 @@ nav {
 	.button {
 		width: 13rem;
 		height: 8rem;
-	}
+	} */
 }
 
 @media (min-width: 450px) and (max-width: 724px) {
-	.board {
+	/* .board {
 		grid-template-columns: repeat(3, 1fr);
 		grid-gap: 0.75px;
 	}
@@ -81,11 +61,11 @@ nav {
 	.button {
 		width: 10rem;
 		height: 8rem;
-	}
+	} */
 }
 
 @media screen and (max-width: 449px) {
-	.board {
+	/* .board {
 		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 0.5px;
 	}
@@ -93,5 +73,5 @@ nav {
 	.button {
 		width: 8rem;
 		height: 5rem;
-	}
+	} */
 }

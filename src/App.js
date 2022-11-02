@@ -64,7 +64,7 @@ function App() {
 		}
 	])
 
-	const playSound = (sound) => {
+	const toggleSound = (sound) => {
 		if (!sound.isPlaying) {
 			sound.sfx.play();
 		} else {
@@ -75,15 +75,15 @@ function App() {
 	}
 
 	return (
-		<div className='container'>
-			<header className='App-header'>
+		<div className='container flex flex-col'>
+			<header className='mx-auto'>
 				<h1 className='text-3xl font-bold'>100Devs Soundboard</h1>
 			</header>
 
 			<main>
 				<Sounds 
 					sounds={sounds}
-					onClick={playSound}
+					onClick={toggleSound}
 				/>
 			</main>
 		</div>

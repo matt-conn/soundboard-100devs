@@ -1,9 +1,9 @@
 const Sound = ({ sound, text, onClick }) => {
 	return (
-		<div>
+		<>
 			<button 
 				onClick={() => onClick(sound)}
-				className='button bg-violet-500 hover:bg-violet-600'
+				className='flex justify-center text-4xl border-2 border-gray-300 rounded-xl py-10 px-6 bg-gray-100 hover:border-gray-800 sm:max-md:last:col-span-2' 
 				style={{ 
 					backgroundImage: `url('${sound.cover}')`,
 					backgroundPosition: 'center',
@@ -12,10 +12,11 @@ const Sound = ({ sound, text, onClick }) => {
 					color: 'white'
 				}}
 			>
+				{text}
 			</button>
-
-			<p className='subtitle'>{text}</p>
-		</div>
+			
+			{/* <p className='subtitle'>{text}</p> */}
+		</>
 	);
 };
 
