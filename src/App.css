@@ -22,14 +22,16 @@ nav {
 	/* make semantic elements behave like <div> elements in legacy browsers. */
 }
 
-.App {
-	text-align: center;
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 body {
 	display: flex;
 	justify-content: center;
-	background-color: #282c34;
+	/* background-color: #282c34; */
 	align-items: center;
 	min-height: 100vh;
 }
@@ -38,40 +40,4 @@ body {
 	text-align: center;
 	margin-bottom: 1rem;
 	font-size: 85%;
-}
-
-@media (min-width: 725px) and (max-width: 999px) {
-	/* .board {
-		grid-template-columns: repeat(3, 1fr);
-		grid-gap: 0.75px;
-	}
-
-	.button {
-		width: 13rem;
-		height: 8rem;
-	} */
-}
-
-@media (min-width: 450px) and (max-width: 724px) {
-	/* .board {
-		grid-template-columns: repeat(3, 1fr);
-		grid-gap: 0.75px;
-	}
-
-	.button {
-		width: 10rem;
-		height: 8rem;
-	} */
-}
-
-@media screen and (max-width: 449px) {
-	/* .board {
-		grid-template-columns: repeat(2, 1fr);
-		grid-gap: 0.5px;
-	}
-
-	.button {
-		width: 8rem;
-		height: 5rem;
-	} */
 }

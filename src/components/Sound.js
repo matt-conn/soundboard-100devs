@@ -3,7 +3,7 @@ const Sound = ({ sound, text, onClick }) => {
 		<>
 			<button 
 				onClick={() => onClick(sound)}
-				className='flex justify-center text-4xl border-2 border-gray-300 rounded-xl py-10 px-6 bg-gray-100 hover:border-gray-800 sm:max-md:last:col-span-2' 
+				className='flex justify-center align-middle text-2xl min-w-full min-h-full border-4 border-neutral-300 hover:border-neutral-400 rounded-xl bg-gray-100 sm:max-md:last:col-span-2 p-6 py-20 md:py-18 drop-shadow-lg' 
 				style={{ 
 					backgroundImage: `url('${sound.cover}')`,
 					backgroundPosition: 'center',
@@ -12,18 +12,13 @@ const Sound = ({ sound, text, onClick }) => {
 					color: 'white'
 				}}
 			>
-				{text}
+				<span className="relative">
+					<span className="block absolute -inset-1 -skew-y-3 bg-pink-500 drop-shadow-md hover:drop-shadow-xl" aria-hidden="true">{text}</span>
+					<span>{text}</span>
+				</span>
 			</button>
-			
-			{/* <p className='subtitle'>{text}</p> */}
 		</>
 	);
 };
 
 export default Sound;
-
-
-// background: url('./images/default-cover.png');
-// background-position: center;
-// background-size: cover;
-// background-repeat: no-repeat;

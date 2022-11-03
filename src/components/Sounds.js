@@ -4,7 +4,7 @@ const Sounds = ({ sounds, onClick }) => {
 	return (
         <div className="grid justify-items-center grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
             {sounds.map((sound) => (
-                <Sound className="first:bg-black last:bg-black"key={sound.id} sound={sound} text={sound.text} onClick={onClick} />
+                <Sound key={sound.id} sound={sound} text={sound.text} onClick={onClick} />
             ))}
         </div>
     )
