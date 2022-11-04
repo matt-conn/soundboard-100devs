@@ -74,6 +74,7 @@ function App() {
 
 	const toggleSound = (sound) => {
 		if (!sound.isPlaying) {
+			sound.sfx.currentTime = 0
 			sound.sfx.play();
 		} else {
 			sound.sfx.pause();
