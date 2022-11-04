@@ -85,7 +85,7 @@ function App() {
 	return (
 		<div className='container flex flex-col mt-20 sm:my-10'>
 			<header className='mx-auto'>
-				<h1 className='text-3xl font-mono font-bold mb-6'>100Devs Soundboard</h1>
+				<h1 className='text-3xl font-mono font-bold mb-8'>100Devs Soundboard</h1>
 			</header>
 
 			<main>
