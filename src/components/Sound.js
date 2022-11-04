@@ -3,10 +3,10 @@ const Sound = ({ sound, text, onClick }) => {
 		<>
 			<button 
 				onClick={() => onClick(sound)}
-				className='flex justify-center align-middle text-2xl min-w-full min-h-full border-4 border-neutral-300 hover:border-neutral-400 rounded-xl bg-gray-100 sm:max-md:last:col-span-2 p-6 py-20 md:py-18 drop-shadow-lg' 
+				className='flex justify-center align-middle text-2xl min-w-full min-h-full border-4 border-pink-200 hover:border-pink-500 rounded-xl bg-gray-100 sm:max-md:last:col-span-2 p-6 py-20 md:py-18 drop-shadow-lg' 
 				style={{ 
 					backgroundImage: `url('${sound.cover}')`,
-					backgroundPosition: 'center',
+					backgroundPosition: 'top',
 					backgroundRepeat:'no-repeat',
 					backgroundSize:'cover',
 					color: 'white'

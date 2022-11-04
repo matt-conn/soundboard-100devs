@@ -85,7 +85,7 @@ function App() {
 	return (
 		<div className='container flex flex-col mt-20 sm:my-10'>
 			<header className='mx-auto'>
-				<h1 className='text-3xl font-bold mb-6'>100Devs Soundboard</h1>
+				<h1 className='text-3xl font-mono font-bold mb-6'>100Devs Soundboard</h1>
 			</header>
 
 			<main>
@@ -94,6 +94,21 @@ function App() {
 					onClick={toggleSound}
 				/>
 			</main>
+
+			<footer className='flex flex-col mt-16'>
+				<span className="relative">
+					<span className="block absolute -inset-1 -skew-y-3 font-bold bg-pink-500 drop-shadow-md text-center" aria-hidden="true">More About 100Devs</span>
+					<span>Learn More About 100Devs</span>
+				</span>
+				
+				<ul className='mt-8 mb-5 flex justify-center'>
+					<li className='ml-2 mr-2'><a href="https://www.youtube.com/channel/UCGiRSHBdWuCgjgmPPz_13xw"><i class="fa-brands fa-youtube"></i></a></li>
+					<li className='ml-2 mr-2'><a href="https://www.twitch.tv/learnwithleon"><i class="fa-brands fa-twitch"></i></a></li>
+					<li className='ml-2 mr-2'><a href="https://twitter.com/leonnoel"><i class="fa-solid fa-link"></i></a></li>
+					<li className='ml-2 mr-2'><a href="https://discord.com/invite/zNxhjnmDPy"><i class="fa-brands fa-discord"></i></a></li>
+					<li className='ml-2 mr-2'><a href="https://www.youtube.com/channel/UCGiRSHBdWuCgjgmPPz_13xw"><i class="fa-brands fa-github"></i></a></li>
+				</ul>
+			</footer>
 		</div>
 	);
 }
