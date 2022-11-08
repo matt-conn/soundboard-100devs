@@ -22,10 +22,33 @@ nav {
 	/* make semantic elements behave like <div> elements in legacy browsers. */
 }
 
-.container {
-	display: flex;
+.app-container {
+	width: 100vw;
+	height: 100vh;
+}
+
+.grid-container {
+	display: grid;
+	/* width: 100vw;
+	height: 100vh; */
 	justify-content: center;
-	align-items: center;
+	align-content: center;
+	grid-template-columns: repeat(3, 25vmin);
+	grid-template-rows: repeat(3, 20vmin);
+	gap: 1.5rem;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 480px) {
+	.grid-container {
+		grid-template-columns: repeat(2, 30vmin);
+		grid-template-rows: repeat(5, 20vmin);
+		gap: 1rem;
+	}
+
+	.button:last-of-type {
+		grid-column: 1 / span 2;
+	}
 }
 
 body {
@@ -33,7 +56,10 @@ body {
 	justify-content: center;
 	background-color: rgb(243 244 246);
 	align-items: center;
-	min-height: 100vh;
+}
+
+.button {
+	color: green;
 }
 
 i {
