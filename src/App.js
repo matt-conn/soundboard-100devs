@@ -84,9 +84,9 @@ function App() {
 	}
 
 	return (
-		<div className='app-container flex flex-col mt-12'>
-			<header className='mx-auto mb-10'>
-				<h1 className='text-lg sm:text-xl md:text-2xl lg:text-4xl font-mono font-bold'>100Devs Soundboard</h1>
+		<div className='app-container flex flex-col'>
+			<header className='mx-auto'>
+				<h1 className='text-lg sm:text-2xl md:text-4xl lg:text-5xl font-mono font-bold'>100Devs Soundboard</h1>
 			</header>
 
 			<main>
@@ -96,10 +96,11 @@ function App() {
 				/>
 			</main>
 
-			<footer className='flex flex-col mt-16'>
-				<span className="relative">
-					<span className="block absolute -inset-1 -skew-y-3 font-bold bg-pink-500 hover:bg-pink-600 drop-shadow-md text-center" aria-hidden="true">More About 100Devs</span>
-					<span>Learn More About 100Devs</span>
+			<footer className='flex flex-col'>
+				<span className="text-center">
+					<span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block">
+    					<span className="relative text-white">More About 100Devs</span>
+  					</span>
 				</span>
 				
 				<ul className='mt-8 mb-5 flex justify-center'>

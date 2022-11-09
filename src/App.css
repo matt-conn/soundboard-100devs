@@ -22,27 +22,39 @@ nav {
 	/* make semantic elements behave like <div> elements in legacy browsers. */
 }
 
+body {
+	display: flex;
+	justify-content: center;
+	background-color: rgb(243 244 246);
+	align-items: center;
+}
+
 .app-container {
+	justify-content: space-between;
 	width: 100vw;
-	height: 100vh;
+	margin-top: 50px;
 }
 
 .grid-container {
 	display: grid;
-	/* width: 100vw;
-	height: 100vh; */
 	justify-content: center;
 	align-content: center;
-	grid-template-columns: repeat(3, 25vmin);
+	grid-template-columns: repeat(3, 33.3vmin);
 	grid-template-rows: repeat(3, 20vmin);
 	gap: 1.5rem;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 /* Mobile Styles */
 @media only screen and (max-width: 480px) {
 	.grid-container {
-		grid-template-columns: repeat(2, 30vmin);
-		grid-template-rows: repeat(5, 20vmin);
+		grid-template-columns: repeat(2, 40vmin);
+		grid-template-rows: repeat(5, 18vmin);
 		gap: 1rem;
 	}
 
@@ -51,15 +63,24 @@ nav {
 	}
 }
 
-body {
-	display: flex;
-	justify-content: center;
-	background-color: rgb(243 244 246);
-	align-items: center;
+/* Tablet Styles */
+@media (min-width: 481px) and (max-width: 909px) {
+	/* .grid-container {
+		margin-left: 2rem;
+		margin-right: 2rem;
+		grid-template-columns: repeat(3, 28vmin);
+		grid-template-rows: repeat(3, 25vmin);
+		gap: 1.25rem;
+	} */
 }
 
-.button {
-	color: green;
+.sound-btn {
+	position: relative;
+}
+
+.sound-label {
+	position: absolute;
+	bottom: 0;
 }
 
 i {
