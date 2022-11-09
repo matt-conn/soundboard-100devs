@@ -84,9 +84,9 @@ function App() {
 	}
 
 	return (
-		<div className='app-container flex flex-col'>
+		<div className='app-container flex flex-col justify-between'>
 			<header className='mx-auto'>
-				<h1 className='text-lg sm:text-2xl md:text-4xl lg:text-5xl font-mono font-bold'>100Devs Soundboard</h1>
+				<h1 className='text-xl sm:text-2xl md:text-4xl lg:text-5xl font-mono font-bold'>100Devs Soundboard</h1>
 			</header>
 
 			<main>
@@ -96,14 +96,14 @@ function App() {
 				/>
 			</main>
 
-			<footer className='flex flex-col'>
+			<footer className='flex flex-col mt-5'>
 				<span className="text-center">
 					<span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block">
-    					<span className="relative text-white">More About 100Devs</span>
+    					<span className="relative text-sm sm:text-lg md:text-lg lg:text-xl font-mono font-bold">More About 100Devs</span>
   					</span>
 				</span>
 				
-				<ul className='mt-8 mb-5 flex justify-center'>
+				<ul className='mt-4 mb-5 flex justify-center'>
 					<li className='ml-2 mr-2'><a href="https://www.youtube.com/channel/UCGiRSHBdWuCgjgmPPz_13xw"><i className="fa-brands fa-youtube"></i></a></li>
 					<li className='ml-2 mr-2'><a href="https://www.twitch.tv/learnwithleon"><i className="fa-brands fa-twitch"></i></a></li>
 					<li className='ml-2 mr-2'><a href="https://twitter.com/leonnoel"><i className="fa-solid fa-link"></i></a></li>

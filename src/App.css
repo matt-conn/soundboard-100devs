@@ -23,32 +23,51 @@ nav {
 }
 
 body {
-	display: flex;
-	justify-content: center;
-	background-color: rgb(243 244 246);
-	align-items: center;
+	/* CROSS */
+	/* https://www.magicpattern.design/tools/css-backgrounds */
+	background-color: #f3f4f6;
+	background: radial-gradient(
+			circle,
+			transparent 20%,
+			#f3f4f6 20%,
+			#f3f4f6 80%,
+			transparent 80%,
+			transparent
+		),
+		radial-gradient(
+				circle,
+				transparent 20%,
+				#f3f4f6 20%,
+				#f3f4f6 80%,
+				transparent 80%,
+				transparent
+			)
+			25px 25px,
+		linear-gradient(hsl(330, 81%, 90%) 2px, transparent 2px) 0 -1px,
+		linear-gradient(90deg, hsl(330, 81%, 80%) 2px, #f3f4f6 2px) -1px 0;
+	background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
 }
 
 .app-container {
-	justify-content: space-between;
 	width: 100vw;
-	margin-top: 50px;
+	height: 100vh;
+	padding: 50px 0 10px 0;
 }
 
 .grid-container {
 	display: grid;
 	justify-content: center;
 	align-content: center;
-	grid-template-columns: repeat(3, 33.3vmin);
+	grid-template-columns: repeat(3, 28vmin);
 	grid-template-rows: repeat(3, 20vmin);
 	gap: 1.5rem;
 }
 
-footer {
+/* footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-}
+} */
 
 /* Mobile Styles */
 @media only screen and (max-width: 480px) {
@@ -58,20 +77,52 @@ footer {
 		gap: 1rem;
 	}
 
-	.button:last-of-type {
+	.sound-btn:last-of-type {
+		grid-column: 1 / span 2;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 624px) {
+	.grid-container {
+		margin-left: 2rem;
+		margin-right: 2rem;
+		grid-template-columns: repeat(2, 40vmin);
+		grid-template-rows: repeat(5, 18vmin);
+		gap: 1.25rem;
+	}
+
+	.sound-btn:last-of-type {
+		grid-column: 1 / span 2;
+	}
+}
+
+@media (min-width: 625px) and (max-width: 824px) {
+	.grid-container {
+		margin-left: 2rem;
+		margin-right: 2rem;
+		grid-template-columns: repeat(2, 40vmin);
+		grid-template-rows: repeat(5, 14vmin);
+		gap: 1.25rem;
+	}
+
+	.sound-btn:last-of-type {
 		grid-column: 1 / span 2;
 	}
 }
 
 /* Tablet Styles */
-@media (min-width: 481px) and (max-width: 909px) {
-	/* .grid-container {
+@media (min-width: 825px) and (max-width: 900px) {
+	.grid-container {
 		margin-left: 2rem;
 		margin-right: 2rem;
-		grid-template-columns: repeat(3, 28vmin);
-		grid-template-rows: repeat(3, 25vmin);
+		grid-template-columns: repeat(2, 40vmin);
+		grid-template-rows: repeat(5, 14vmin);
 		gap: 1.25rem;
-	} */
+	}
+
+	.sound-btn:last-of-type {
+		grid-column: 1 / span 2;
+	}
 }
 
 .sound-btn {
