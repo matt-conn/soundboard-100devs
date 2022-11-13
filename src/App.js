@@ -1,74 +1,80 @@
 import { useState } from 'react';
-import planeSfx from './sounds/small-plane.mp3'
-import Sounds from './components/Sounds'
+import boatsAndLogs from './sounds/boats-and-logs.mp3';
+import firstTry from './sounds/first-try.mp3';
+import hypeLeon from './sounds/hype-leon.mp3';
+import introMusic from './sounds/intro.mp3';
+import justDoIt from './sounds/just-do-it.mp3';
+import pepTalkLeon from './sounds/leon-pep-talk.mp3';
+import weGoGet from './sounds/we-go-get.mp3';
+import tenSecWarning from './sounds/ten-second-warning.mp3';
+import why100Devs from './sounds/why.mp3';
+import Sounds from './components/Sounds';
 import './App.css';
 
 function App() {
-	// const [isPlaying, setIsPlaying] = useState(false);
-
 	const [sounds] = useState([
 		{
 			id: 1,
 			text: 'Intro',
-			sfx: new Audio(planeSfx),
+			sfx: new Audio(introMusic),
 			isPlaying: false,
-			cover: 'images/default-cover.png',
+			cover: 'images/intro.png',
 		},
 		{
 			id: 2,
-			text: 'We go get2',
-			sfx: './sounds/small-plan.mp3',
+			text: 'Hype Leon',
+			sfx: new Audio(hypeLeon),
 			isPlaying: false,
-			cover: 'images/default-cover.png',
+			cover: 'images/hype-leon.png',
 		},
 		{
 			id: 3,
-			text: 'We go get3',
-			sfx: './sounds/small-plan.mp3',
+			text: 'We Go Get',
+			sfx: new Audio(weGoGet),
 			isPlaying: false,
-			cover: 'images/default-cover.png',
+			cover: 'images/we-go-get.png',
 		},
 		{
 			id: 4,
-			text: 'We go get4',
-			sfx: new Audio(planeSfx),
+			text: 'First Try',
+			sfx: new Audio(firstTry),
 			isPlaying: false,
-			cover: 'images/default-cover.png',
+			cover: 'images/first-try.png',
 		},
 		{
 			id: 5,
-			text: 'We go gettttt5',
-			sfx: './sounds/small-plan.mp3',
+			text: 'Why 100Devs?',
+			sfx: new Audio(why100Devs),
 			isPlaying: false,
-			cover: 'images/default-cover.png',
+			cover: 'images/bob.png',
 		},
 		{
 			id: 6,
-			text: 'We go get6',
-			sfx: './sounds/small-plan.mp3',
+			text: ':10 Warning',
+			sfx: new Audio(tenSecWarning),
 			isPlaying: false,
-			cover: 'images/default-cover.png',
+			cover: 'images/ten-second-warning.png',
 		},
 		{
 			id: 7,
-			text: 'We go get7',
-			sfx: './sounds/small-plan.mp3',
+			text: 'Boats & Logs',
+			sfx: new Audio(boatsAndLogs),
 			isPlaying: false,
-			cover: 'images/default-cover.png',
+			cover: 'images/boats-and-logs.png',
 		},
 		{
 			id: 8,
-			text: 'We go get8',
-			sfx: './sounds/small-plan.mp3',
+			text: 'Pep Talk Leon',
+			sfx: new Audio(pepTalkLeon),
 			isPlaying: false,
-			cover: 'images/default-cover.png',
+			cover: 'images/conference-room.png',
 		},
 		{
 			id: 9,
-			text: 'We go get9',
-			sfx: './sounds/small-plan.mp3',
+			text: 'Just Do It',
+			sfx: new Audio(justDoIt),
 			isPlaying: false,
-			cover: 'images/default-cover.png',
+			cover: 'images/just-do-it.png',
 		}
 	])
 
