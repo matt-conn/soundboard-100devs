@@ -92,7 +92,7 @@ function App() {
 	return (
 		<div className='app-container flex flex-col justify-between'>
 			<header className='mx-auto'>
-				<h1 className='text-xl sm:text-2xl md:text-4xl lg:text-5xl font-mono font-bold'>100Devs Soundboard</h1>
+				<h1 className='text-xl sm:text-3xl md:text-5xl lg:text-6xl font-mono font-bold'>100Devs Soundboard</h1>
 			</header>
 
 			<main>
@@ -102,7 +102,7 @@ function App() {
 				/>
 			</main>
 
-			<footer className='flex flex-col mt-5'>
+			<footer className='flex flex-col mt-8'>
 				<span className="text-center">
 					<span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block">
     					<span className="relative text-sm sm:text-lg md:text-lg lg:text-xl font-mono font-bold">More About 100Devs</span>
