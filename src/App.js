@@ -92,7 +92,7 @@ function App() {
 	return (
 		<div className='app-container flex flex-col justify-between'>
 			<header className='mx-auto'>
-				<h1 className='text-xl sm:text-3xl md:text-5xl lg:text-6xl font-mono font-bold'>100Devs Soundboard</h1>
+				<h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-mono font-bold mb-2'>100Devs Soundboard</h1>
 			</header>
 
 			<main>
