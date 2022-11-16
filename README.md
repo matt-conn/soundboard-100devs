@@ -1,9 +1,7 @@
 # 100Devs Soundboard | React
 
 ## Overview
-Revisit your favorite 100Devs memories - we go get!
-
-This is a web app to quickly calculate the amount of water needed to dilute a pre-batched cocktail. Enter the undiluted liquid volume as well as your desired dilution level.
+I used this project to learn more about using React and Tailwind CSS. There are some special moments and sounds that I associate with 100Devs and this app lets everyone revisit some favorite 100Devs memories. We go get!
 
 ## Links
 [Link to App](https://soundboard-100devs.netlify.app)
