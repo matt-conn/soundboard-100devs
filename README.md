@@ -1,4 +1,4 @@
-# 100Devs Soundboard | React
+# 100Devs Soundboard
 
 ## Overview
 There are some special moments and sounds that I associate with 100Devs and this app lets everyone revisit some favorite 100Devs memories. We go get!
