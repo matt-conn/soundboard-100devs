@@ -1,7 +1,9 @@
 # 100Devs Soundboard | React
 
 ## Overview
-I used this project to learn more about using React and Tailwind CSS. There are some special moments and sounds that I associate with 100Devs and this app lets everyone revisit some favorite 100Devs memories. We go get!
+There are some special moments and sounds that I associate with 100Devs and this app lets everyone revisit some favorite 100Devs memories. We go get!
+
+I used this project to better understand both React and Tailwind CSS.
 
 ## Links
 [Link to App](https://soundboard-100devs.netlify.app)
